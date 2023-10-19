@@ -1,0 +1,689 @@
+@font-face {
+    font-family: copperplate;
+    src: url(../fonts/CopperplateCC/ttf/CopperplateCC-Bold.ttf)
+}
+@font-face {
+    font-family: molle;
+    src: url(https://fonts.googleapis.com/css2?family=Molle);
+}
+
+.splash {
+    background-image: url(../images/pool-table-background-pexels-photo-62536871.png);
+    background-repeat: no-repeat;
+    background-color: #222222;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background-image: url(../images/Warehouse-Background.jpg);
+    background-repeat: no-repeat;
+    background-color: #222222;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeOut 3s;
+    font-family: "Molle", cursive;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Copperplate", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.fade-in {
+    animation: fadeIn 1s;
+}   
+
+.fade-out {
+    animation: fade-out 3s;
+}
+
+.hours {
+    display: grid;
+    text-align: center;
+    margin: 75px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  
+}
+
+.address {
+    display: grid;
+    text-align: center;
+    margin: 75px;
+}
+
+
+.sm-icons {
+    display: flex;
+    justify-content: center;
+    margin: 75px;
+}
+
+h1 {
+    color: #E0C49B;
+    font-family: 'molle', cursive;
+    font-size: 75px;
+    text-shadow: 3px 3px 3px #000000;
+}
+h2 {
+    color: #9E2A25;
+    font-family: 'molle', cursive;
+    font-size: 55px;
+    text-shadow: 3px 3px 3px #000000;
+}
+h3 {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* -------- Preloader -------- */
+
+.preloader img {
+    animation: spin 10s linear infinite;
+    transition: all;
+    width: 150px;
+    margin: 0 auto;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  } 
+
+/* -------- Header Section, Buttons, Navigation -------- */
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 150px;
+    font-size: 35px;
+}
+
+button:hover {
+    background-color: #9e2a25;
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 150px;
+    font-size: 35px;   
+}
+
+.bubble-btn {
+    background-color: #2222;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 35px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .bubble-btn:hover {
+    animation: bubble 0.4s ease-out;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* Attempting to make smaller Bubble:Hover for Primary & Secondary Button Animations on happening page*/
+.bubble-btn-sm {
+    background-color: #2222;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 35px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .bubble-btn-sm:hover {
+    animation: bubble 0.4s ease-out;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+/* END smaller bubble button animation */
+
+.menu-button-active {
+    background-color: #54AD55;
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 150px;
+    font-size: 35px;
+}
+
+.primary-button {
+    text-decoration: none;
+    background-color: #9E2A25;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.secondary-button {
+    text-decoration: none;
+    background-color: #946734;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.tt-button {
+    text-decoration: none;
+    background-color: #23173D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+ /* -------- Happening: Container Cards -------- */
+
+.card-container {
+    width: 75%;
+    height: auto;
+}
+.header-left {
+    text-align: left;
+    padding-left: 40px;
+}
+.card-background {
+    background-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #946734;
+    border-width: 1px;
+    border-radius: 20px;
+    height: auto;
+}
+.card {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    font-size: 25px;
+}
+.touchtunes-block {
+    display: inline;
+    width: 100%;
+    height: 100px;
+}
+.tt-img {
+    height: auto;
+    max-width: 100%;
+}
+.image-ufc {
+    height: auto;
+    max-width: 100%;
+    padding-right: 50px;
+}
+
+/* -------- About: My Story Section -------- */
+
+.story-container {
+    display: grid;
+    align-self: center;
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+.story {
+    display: inline-block;
+    width: 100%;
+    border-style: solid;
+    border-color: #946734;
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: 30px;
+}
+
+ /* -------- About: The Meet The Team "Gallery" Section -------- */
+
+.team-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+ .team-gallery-background {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+ .team-gallery-frame {
+    width: 100%;
+ }
+ .team-member {
+    border-radius: 20px;
+    border-color:#946734;
+ }
+ .team-member-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: black;
+    color: #E0C49B;
+    border-radius: 20px;
+ }
+
+ /* -------- About: Testimonials Section -------- */
+
+ .testimonials-container {
+    display: grid;
+    align-self: center;
+    width: 75%;
+    height: auto;
+    margin: auto;
+ }
+
+ .testimonials {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .patron {
+    font-size: 20px;
+    font-family: copperplate;
+ }
+
+ /* -------- Footer Section -------- */
+
+ .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-text {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100px;
+    column-gap: 40px;
+    background-color: #000000;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-icons {
+    display: table;
+    width: 50%;
+    height: 100px;
+    background-image: linear-gradient(to right, #000000, #946734);
+}
+
+
+
+
+
+/* -------- Media Query for tablet -------- */
+
+
+@media screen and (max-width: 1464px) {
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        background-image: linear-gradient(to right, #000000, #946734);
+    }
+    
+    .sm-icons {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-text {     /* canNOT figure out how to center this stupid text */
+        width: 50%;
+        height: 90px;
+        background-color: #000000; 
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 90px;
+        background-image: linear-gradient (to right, #000000, #946734);
+    }
+
+ /* -------- MEDIA QUERY Happening: Container Cards -------- */
+
+ 
+    .card-container {
+        display: flex;
+        flex: 90%;
+        margin: 10px;
+    }
+
+    .card-background {
+        width: 90%;
+    }
+
+    .image-ufc {
+        height: auto;
+        min-width: 50%;
+    }
+
+}
+
+/* -------- Media Query for mobile -------- */
+
+@media screen and (max-width: 767px) {
+    body {
+        background-size: auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .sm-logo {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    } 
+
+ /* -------- MEDIA QUERY for Header/Nav Bar Section -------- */ 
+
+    .header-bar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .menu-button {
+        background-color: rgba(0,0,0,.5);
+        border: none;
+        color: white;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 150px;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+
+    button:hover {
+        background-color: #9e2a25;
+        border: none;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 150px;
+        font-size: 25px;   
+    }
+
+    .menu-button-active {
+        background-color: #54AD55;
+        border: none;
+        color: white;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 150px;
+        font-size: 25px;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    .bubble-btn {
+        background-color: #2222;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 20px 40px;
+        font-size: 25px;
+        position: relative;
+        transition: transform 0.3s;
+      }
+      
+      .bubble-btn:hover {
+        animation: bubble 0.4s ease-out;
+      }
+      
+      @keyframes bubble {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+ /* -------- MEDIA QUERY for Story Section -------- */ 
+
+    .story-container {
+        width: 90%;
+    }
+
+    .story {
+        display: inline-block;
+        width: 100%;
+        border-style: solid;
+        border-color: #946734;
+        background-color: black;
+        border-radius: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 40px;
+    }
+
+ /* -------- MEDIA QUERY for Meet The Team Gallery Section -------- */ 
+
+    .team-gallery-container {
+        width: 90%;
+    }
+
+    .team-gallery-background {
+        width: 100%;
+        height: auto;
+     }
+
+     .team-gallery-frame { /* canNOT figure out how to center these stupid photo frames on tablet or mobile screen widths */
+        width: 100%;
+     }
+
+    .team-member {
+        margin: 0, auto;
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+ /* -------- MEDIA QUERY for Testimonials Section -------- */ 
+
+    .testimonials-container {
+        width: 90%;
+     }
+
+     .testimonials {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+     .patron {
+        font-size: 20px;
+        font-family: copperplate;
+     }
+
+/* -------- MEDIA QUERY for Footer Section -------- */ 
+
+    .footer {
+        display: block;
+    }
+
+    .footer-text {     /* canNOT figure out how to center this stupid text */
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #000000; 
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        background-image: linear-gradient(to right, #000000, #946734);
+    }
+
+    .icons-sm {
+        img {
+            width: 50px;
+            height: auto;
+        }
+    }
+}
